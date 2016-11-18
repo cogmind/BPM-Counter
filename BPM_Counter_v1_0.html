@@ -56,7 +56,7 @@ div {
 <p class="bpm" id="bpm_avg">Mean BPM</p>
 <p class="bpm" id="bpm_median">Median BPM</p>
 <p class="bpm" id="samples"><i>n</i>=0</p>
-<p class="info" id="information"><br><br><br></p>
+<p class="info" id="information">(Tap at least 2 times to measure BPM. Swipe left to reset)</p>
 
 <div>
 	<p id="ver">2016 Daniel Labbé</p>
@@ -97,6 +97,7 @@ function reset(){
 	document.getElementById("bpm").innerHTML = "Current ";
 	document.getElementById("bpm_avg").innerHTML = "Mean ";
 	document.getElementById("bpm_median").innerHTML = "Median ";
+	document.getElementById("information").innerHTML = "</br></br></br>";
 	document.getElementById("information").style.textAlign = "center";
 	document.getElementById("samples").innerHTML = "<i>n</i>=0";
 
